@@ -1,0 +1,39 @@
+.nav-container {
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #242424;
+  border-bottom: 0.2rem solid slateblue;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav a {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav button {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background: slateblue;
+}
+
+.nav button img {
+  margin-right: 1rem;
+}
+
+.nav img {
+  color: white !important;
+}

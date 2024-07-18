@@ -1,0 +1,53 @@
+.media-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.media-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-content p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.media-content .youtube-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.media-content .separator p {
+  background-color: slateblue;
+}
+
+.media-grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.media-grid a {
+  margin: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .media-content .youtube-video iframe {
+    width: 100% !important;
+  }
+}

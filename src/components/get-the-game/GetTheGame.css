@@ -1,0 +1,13 @@
+.get-the-game {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.get-the-game button {
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.6rem;
+  background-color: slateblue;
+}

@@ -1,0 +1,17 @@
+.features-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.list strong {
+  color: slateblue;
+}
+
+.list ::marker {
+  color: slateblue;
+}

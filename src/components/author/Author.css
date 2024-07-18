@@ -1,0 +1,30 @@
+.author-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: slateblue;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.author-container h1 {
+  color: white;
+  padding: 0;
+}
+
+.author-container a img {
+  margin-top: 0.5rem;
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+}
+
+.author-container .about-image {
+  width: 200px;
+  margin-right: 2rem;
+}
+
+.author-container p {
+  padding: 0;
+  font-size: 1em;
+}

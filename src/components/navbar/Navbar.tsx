@@ -43,30 +43,36 @@ export default function Navbar() {
               </span>
             </button>
           </a>
-          <a href="https://x.com/CacildesGame" target="_blank" title="Twitter">
-            <img src={Twitter} width="36" height="36" />
-          </a>
-          <a
-            href="https://www.youtube.com/@CacildesAdventure"
-            target="_blank"
-            title="Youtube"
-          >
-            <img src={Youtube} width="40" height="40" />
-          </a>
-          <a
-            href="https://github.com/andrefcasimiro/cacildes-adventure"
-            target="_blank"
-            title="Github"
-          >
-            <img src={Github} width="40" height="40" />
-          </a>
-          <a
-            href="https://discord.com/invite/JwnZMc27D2"
-            target="_blank"
-            title="Discord"
-          >
-            <img src={Discord} width="40" height="40" />
-          </a>
+          <span className="social-icons">
+            <a
+              href="https://x.com/CacildesGame"
+              target="_blank"
+              title="Twitter"
+            >
+              <img src={Twitter} width="36" height="36" />
+            </a>
+            <a
+              href="https://www.youtube.com/@CacildesAdventure"
+              target="_blank"
+              title="Youtube"
+            >
+              <img src={Youtube} width="40" height="40" />
+            </a>
+            <a
+              href="https://github.com/andrefcasimiro/cacildes-adventure"
+              target="_blank"
+              title="Github"
+            >
+              <img src={Github} width="40" height="40" />
+            </a>
+            <a
+              href="https://discord.com/invite/JwnZMc27D2"
+              target="_blank"
+              title="Discord"
+            >
+              <img src={Discord} width="40" height="40" />
+            </a>
+          </span>
         </div>
       </nav>
     </div>

@@ -93,8 +93,8 @@ export const resources = {
       AUTHOR_6:
         "Development has continued in the form of bugfixes and additional content, with a major expansion already released and another on the horizon!",
       AUTHOR_7: "So... stay tuned!",
-      ENGLISH: "English",
-      PORTUGUESE: "Português",
+      ENGLISH: "EN",
+      PORTUGUESE: "PT",
     },
   },
   pt: {
@@ -193,8 +193,8 @@ export const resources = {
       AUTHOR_6:
         "O desenvolvimento continua na forma de correções de erros e conteúdo adicional, com uma grande expansão já lançada e outra no horizonte!",
       AUTHOR_7: "Então... fiquem atentos!",
-      ENGLISH: "English",
-      PORTUGUESE: "Português",
+      ENGLISH: "EN",
+      PORTUGUESE: "PT",
     },
   },
 };

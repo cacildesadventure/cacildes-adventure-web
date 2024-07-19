@@ -1,37 +1,40 @@
+import { useTranslation } from "react-i18next";
 import Title from "../title/Title";
 import "./Factsheet.css";
 
 export default function Factsheet() {
+  const { t } = useTranslation();
+
   return (
     <div className="factsheet-container">
-      <Title>FACTSHEET</Title>
+      <Title>{t("FACTSHEET")}</Title>
 
       <table cellSpacing={10} className="table">
         <tr>
-          <th>Name</th>
-          <th>Genre</th>
-          <th>Sub-Genre</th>
-          <th>Available Languages</th>
+          <th>{t("NAME")}</th>
+          <th>{t("GENRE")}</th>
+          <th>{t("SUB_GENRE")}</th>
+          <th>{t("AVAILABLE_LANGUAGES")}</th>
         </tr>
         <tr>
-          <td>Cacildes Adventure</td>
-          <td>Action RPG, Soulslike</td>
-          <td>Adventure, High-Fantasy, Comedy</td>
-          <td>English, Portuguese</td>
+          <td>{t("CACILDES_ADVENTURE")}</td>
+          <td>{t("ACTION_RPG_SOULSLIKE")}</td>
+          <td>{t("ADVENTURE_HIGH_FANTASY")}</td>
+          <td>{t("ENGLISH_PORTUGUESE")}</td>
         </tr>
       </table>
 
       <table cellSpacing={10} className="table">
         <tr>
           {" "}
-          <th>Platforms</th>
-          <th>Developer</th>
-          <th>Location</th>
-          <th>Release Date</th>
-          <th>Press Contact</th>
+          <th>{t("PLATFORMS")}</th>
+          <th>{t("DEVELOPER")}</th>
+          <th>{t("LOCATION")}</th>
+          <th>{t("RELEASE_DATE")}</th>
+          <th>{t("PRESS_CONTACT")}</th>
         </tr>
         <tr>
-          <td>Windows (Steam)</td>
+          <td>{t("WINDOWS_STEAM")}</td>
           <td>André Fernandes</td>
           <td>Portugal</td>
           <td>27 Apr, 2024</td>

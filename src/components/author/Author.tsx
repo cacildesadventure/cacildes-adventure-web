@@ -3,12 +3,15 @@ import Twitter from "../../assets/twitter.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import About from "../about/about-card/AboutCard";
 import Bandcamp from "../../assets/bandcamp.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Author() {
+  const { t } = useTranslation();
+
   return (
     <div className="author-container">
       <About
-        title="A Game By André Fernandes"
+        title={t("A_GAME_BY_ANDRE_FERNANDES")}
         image="author.jpg"
         direction={"left-to-right"}
       >
@@ -35,34 +38,13 @@ export default function Author() {
             <img src={Bandcamp} width="30" height="40" />
           </a>
 
-          <p>Hey there! I'm André, a software developer from Portugal!</p>
-          <p>
-            I studied Videogames and Multimedia at ULHT in Lisbon from 2014 to
-            2017, and in 2018 I started my professional journey as a frontend
-            developer.
-          </p>
-          <p>
-            In 2020, during the COVID lockdowns, I finally got gud and played
-            past the graveyard in Dark Souls. I went on to beat all the Souls
-            games on a binge. This motivated me to open Unity and start working
-            on the RPG of my dreams.
-          </p>
-          <p>
-            Development of Cacildes Adventure began in January 2022, and its
-            full version was published in July 2023 on itch.io.
-          </p>
-          <p>
-            I planned to bring the game to Steam, so I spent another year
-            rewriting much of the code and improving the game. I finally
-            launched it in April 2024.
-          </p>
-          <p>
-            Development has continued in the form of bugfixes and additional
-            content, with a major expansion already released and another on the
-            horizon!
-          </p>
-
-          <p>So... stay tuned! :)</p>
+          <p>{t("AUTHOR_1")}</p>
+          <p>{t("AUTHOR_2")}</p>
+          <p>{t("AUTHOR_3")}</p>
+          <p>{t("AUTHOR_4")}</p>
+          <p>{t("AUTHOR_5")}</p>
+          <p>{t("AUTHOR_6")}</p>
+          <p>{t("AUTHOR_7")} 😁</p>
         </div>
       </About>
     </div>

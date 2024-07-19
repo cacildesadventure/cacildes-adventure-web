@@ -1,21 +1,23 @@
+import { useTranslation } from "react-i18next";
 import Separator from "../separator/Separator";
 import Title from "../title/Title";
 import "./Media.css";
 
 export default function Media() {
+  const { t } = useTranslation();
+
   return (
     <div className="media-container">
-      <Title>MEDIA</Title>
+      <Title>{t("MEDIA")}</Title>
 
       <div className="media-content">
-        <h3>~ VIDEOS ~</h3>
+        <h3>~ {t("VIDEOS")} ~</h3>
         <div className="youtube-video">
           <p>
-            Official Trailer
+            {t("OFFICIAL_TRAILER")}
             <br />
             <em style={{ fontSize: "0.6rem", textTransform: "none" }}>
-              showcasing the game in July 2023, it has since improved and some
-              maps shown here have changed significantly
+              {t("SHOWCASING_THE_GAME")}
             </em>
           </p>
           <iframe
@@ -30,7 +32,7 @@ export default function Media() {
           ></iframe>
         </div>
         <div className="youtube-video">
-          <p>Teaser by me</p>
+          <p> {t("TEASER_BY_ME")}</p>
           <iframe
             width="560"
             height="315"
@@ -44,14 +46,7 @@ export default function Media() {
         </div>
 
         <div className="youtube-video">
-          <p>
-            Teaser by my girlfriend,
-            <br />
-            <em style={{ fontSize: "0.6rem", textTransform: "none" }}>
-              you can tell the difference because she actually knows what she's
-              doing
-            </em>
-          </p>
+          <p>{t("TEASER_BY_MY_GIRLFRIEND")}</p>
           <iframe
             width="560"
             height="315"
@@ -66,7 +61,7 @@ export default function Media() {
 
         <div className="youtube-video">
           <p>
-            Berserk-Tribute Boss Fight
+            {t("BERSERK_TRIBUTE")}
             <br />
           </p>
           <iframe
@@ -82,7 +77,7 @@ export default function Media() {
 
           <Separator />
 
-          <h3>~ IMAGES ~</h3>
+          <h3>~ {t("IMAGES")}~</h3>
 
           <div className="media-grid">
             {[
@@ -121,6 +116,14 @@ export default function Media() {
               "media33.jpg",
               "media34.jpg",
               "media35.jpg",
+              "media36.jpg",
+              "media37.jpg",
+              "media38.jpg",
+              "media39.jpg",
+              "media41.png",
+              "media42.png",
+              "media43.jpg",
+              "media44.jpg",
             ].map((image, index) => (
               <a href={image} target="_blank">
                 <img key={index} src={image} width="250" loading="lazy" />

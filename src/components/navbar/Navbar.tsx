@@ -20,14 +20,14 @@ export default function Navbar() {
             onClick={() => i18n.changeLanguage("en")}
             className={`language-btn ${isEnglish ? "language-active" : ""}`}
           >
-            {t("ENGLISH")}
+            <span>{t("ENGLISH")}</span>
           </button>
 
           <button
             onClick={() => i18n.changeLanguage("pt")}
             className={`language-btn ${isPortuguese ? "language-active" : ""}`}
           >
-            {t("PORTUGUESE")}
+            <span>{t("PORTUGUESE")}</span>
           </button>
         </div>
         <div className="nav-content">
@@ -38,7 +38,9 @@ export default function Navbar() {
           >
             <button>
               <img src={Steam} width="24" height="24" />
-              <strong>{t("GET_THE_GAME")}</strong>
+              <span>
+                <strong>{t("GET_THE_GAME")}</strong>
+              </span>
             </button>
           </a>
           <a href="https://x.com/CacildesGame" target="_blank" title="Twitter">

@@ -51,3 +51,21 @@
 .nav-content .language-active {
   border: 1px solid slateblue !important;
 }
+
+@media (max-width: 1024px) {
+  .nav-content button span {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .nav-content button {
+    max-width: 100px;
+    padding: 0.2rem;
+    margin: 0rem;
+    height: auto;
+  }
+  .nav-content a img {
+    width: 25px !important;
+  }
+}
